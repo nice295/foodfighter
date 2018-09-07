@@ -17,6 +17,21 @@
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
 
+
+    <script src="https://www.gstatic.com/firebasejs/5.4.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB6sVlL035ChFfWnkXe0zP_mwo7ACiFcwo",
+            authDomain: "hs-food-fighter.firebaseapp.com",
+            databaseURL: "https://hs-food-fighter.firebaseio.com",
+            projectId: "hs-food-fighter",
+            storageBucket: "hs-food-fighter.appspot.com",
+            messagingSenderId: "577796515280"
+        };
+        firebase.initializeApp(config);
+    </script>
+
 </head>
 
 <body>
@@ -76,10 +91,10 @@
                         </td>
                         <td width='438' bgcolor='#ffffff'>
                             &nbsp;&nbsp;
-                            <input type="text" name="name" id="go" size="5" height="2">
+                            <input type="text" name="name" id="purchaseName" size="5" height="2">
                             <font color='#000000' size='2pt'>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
-                                <input type=hidden name="customer_name" value=''>
+                                <input type=hidden id="customer_name" name="customer_name" value=''>
 
                             </font>
                         </td>
@@ -189,7 +204,9 @@
 
         <form style="display: hidden" action="lovely-dream.glitch.me/" method="POST" id="form">
             <button id="click" type="button" class="btn btn-secondary" />취소하기</button>
-            <button type="button" class="btn btn-primary" id="click" onClick="location.href='receipt.html'" />결재하기</button>
+            <!-- <button type="button" class="btn btn-primary" id="btnPurchase" onClick="location.href='receipt.html'" />결재하기</button> -->
+            <button type="button" class="btn btn-primary" id="btnPurchase" onClick="" />결재하기</button> -->
+              
         </form>
     </div>
     <!-- /.container -->
@@ -202,8 +219,10 @@
     </footer>  -->
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>    
+    <script src="js/firebase.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
 </body>
 
