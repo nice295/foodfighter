@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 
 <head>
@@ -26,16 +24,13 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">신용카드 결제 서비스</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-
-
-
                     </li>
                 </ul>
             </div>
@@ -46,11 +41,6 @@
         <!-- Jumbotron Header -->
 
         <h4>-주문정보</h4>
-
-
-
-
-
         <tr align='center'>
             <td>
                 <table width='538' bgcolor='#DBDBDB' border='1' cellspacing='1' cellpadding='0'>
@@ -58,12 +48,11 @@
                     <tr height='30' valign='middle'>
                         <td width='100' height='35' bgcolor='#E2EBF2'>
                             <font color='#000000' size='2pt'>
-                                &nbsp;&nbsp;&nbsp;&nbsp; 상품명
+                                상품명
                             </font>
                         </td>
                         <td width='438' bgcolor='#ffffff'>
-                            &nbsp;&nbsp;
-                            <input type="text" name="name" id="name" size="5" height="2">
+                            &nbsp;&nbsp;라면
                             <font color='#000000' size='2pt'>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                 <input type=hidden name="customer_name" value=''> 수량
@@ -104,7 +93,7 @@
                         </td>
                         <td width='438' bgcolor='#ffffff'>
                             &nbsp;&nbsp;
-                            <input type="text" name="name" id="gold" size="5" height="2">
+                            3000원
                             <font color='#000000' size='2pt'>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                 <input type="hidden" name="payment_money" value='0' class=input readOnly>
@@ -159,11 +148,32 @@
         <tr height='30' valign='middle'>
             <td width='100' height='35' bgcolor='#E2EBF2'>
                 <font color='#000000' size='2pt'>
+                    &nbsp;&nbsp;&nbsp;&nbsp; 신용카드번호
+                </font>
+            </td>
+            <td width='438' bgcolor='#ffffff'>
+                &nbsp;&nbsp;
+                <input type="text" name="name" size="5" height="2"> -
+                <input type="text" name="name" size="5" height="2"> -
+                <input type="text" name="name" size="5" height="2"> -
+                <input type="text" name="name" size="5" height="2">
+                <font color='#000000' size='2pt'>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type=hidden name="customer_name" value=''>
+
+                </font>
+            </td>
+        </tr>
+
+        <tr height='30' valign='middle'>
+            <td width='100' height='35' bgcolor='#E2EBF2'>
+                <font color='#000000' size='2pt'>
                     &nbsp;&nbsp;&nbsp;&nbsp; 전화번호
                 </font>
             </td>
             <td width='438' bgcolor='#ffffff'>
                 &nbsp;&nbsp;
+                <input type="text" name="name" size="5" height="2"> -
                 <input type="text" name="name" size="5" height="2"> -
                 <input type="text" name="name" size="5" height="2">
                 <font color='#000000' size='2pt'>
@@ -178,22 +188,18 @@
         <br>
 
         <form style="display: hidden" action="lovely-dream.glitch.me/" method="POST" id="form">
-            <button id="click" type="button" onClick="location.href='receipt.html'" />결재하기</button>
-            <button id="click" type="button" />취소하기</button>
+            <button id="click" type="button" class="btn btn-secondary" />취소하기</button>
+            <button type="button" class="btn btn-primary" id="click" onClick="location.href='receipt.html'" />결재하기</button>
         </form>
-
-
-
     </div>
     <!-- /.container -->
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <!-- <footer class="py-5 bg-dark">
         <div class="container">
 
         </div>
-        <!-- /.container -->
-    </footer>
+    </footer>  -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
